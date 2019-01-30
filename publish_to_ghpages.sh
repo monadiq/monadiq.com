@@ -1,9 +1,11 @@
 #!/bin/sh
 
-DIR=$(dirname "$0")
+# DIR=$(dirname "$0")
 
-cd $DIR/..
+# cd $DIR/..
 
+# echo $DIR 
+# exit 
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
