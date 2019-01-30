@@ -26,13 +26,13 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
     {{ $css := slice (resources.Get "css/leaflet.css") (resources.Get "css/animate.css") (resources.Get "css/icomoon.css") (resources.Get "css/simple-line-icons.css") (resources.Get "css/magnific-popup.css") | resources.Concat "css/style-deps.css" | resources.Minify | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
-    {{ $options := (dict "targetPath" "bootstrap.css" "outputStyle" "compressed" "enableSourceMap" (.Site.IsServer)) }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" >
+    {{ $options := (dict "targetPath" "bootstrap.css" "outputStyle" "compressed" "enableSourceMap" false) }}
     {{ $style := resources.Get "sass/bootstrap.scss" | resources.ToCSS $options | resources.Fingerprint "sha512" }}  
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
-    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" (.Site.IsServer)) }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" >
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
     {{ $style := resources.Get "sass/style-monadiq.scss" | resources.ToCSS $options | resources.Fingerprint "sha512" }}  
-    <link rel="stylesheet"  href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    <link rel="stylesheet"  href="{{ $style.Permalink }}" >
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
