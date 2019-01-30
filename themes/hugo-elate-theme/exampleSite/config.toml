@@ -1,25 +1,27 @@
 # Page settings
 baseurl = "localhost:1313"
-title = "monadiq"
+title = "Elate theme"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
 
 [params]
   
+  custom_css = ["css/custom1.css", "css/custom2.css"]
+
   # Meta
-  author = "Monadiq LLC"
-  description = "Monadiq cloud, aws, gcp, devops, application consulting"
-  email = "contact@monadiq.com"
+  author = ""
+  description = ""
+  email = ""
 
   # Google Maps Javascript API Key (if not set will default to not passing a key)
   googleMapsApiKey = ""
 
   # Navigation
   [params.navigation]
-    brand = "monadiq"
+    brand = "Elate"
     home = "Home"
     work = "Work"
-    testimonials = ""
+    testimonials = "Testimonials"
     services = "Services"
     about = "About"
     contact = "Contact"
@@ -41,7 +43,7 @@ theme = "hugo-elate-theme"
   
   # Hero section
   [params.hero]
-    title = "Monadiq"
+    title = "Do something you love."
     subtitle = 'Another free HTML5 bootstrap template by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates">FREEHTML5.co</a> released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons 3.0</a><br> ported for Hugo by <a href="http://saey55.gitlab.io/pietercv" target="_blank">Pieter Saey</a>'
  
   # Intro section

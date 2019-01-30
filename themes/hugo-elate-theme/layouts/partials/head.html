@@ -1,0 +1,41 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+    <!-- Facebook and Twitter integration -->
+    {{ if not .Site.Params.OpenGraph.hide }}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" />
+    <meta name="twitter:card" content="" />
+    {{ end }}
+    <!-- canonical link tag -->
+    <link rel="canonical" href="{{ .Permalink }}"/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+
+    {{ $css := slice (resources.Get "css/leaflet.css") (resources.Get "css/animate.css") (resources.Get "css/icomoon.css") (resources.Get "css/simple-line-icons.css") (resources.Get "css/magnific-popup.css") | resources.Concat "css/style-deps.css" | resources.Minify | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $options := (dict "targetPath" "bootstrap.css" "outputStyle" "compressed" "enableSourceMap" (.Site.IsServer)) }}
+    {{ $style := resources.Get "sass/bootstrap.scss" | resources.ToCSS $options | resources.Fingerprint "sha512" }}  
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" (.Site.IsServer)) }}
+    {{ $style := resources.Get "sass/style-monadiq.scss" | resources.ToCSS $options | resources.Fingerprint "sha512" }}  
+    <link rel="stylesheet"  href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
