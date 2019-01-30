@@ -17,7 +17,7 @@ brew install hugo
 Simple start the hugo server and hack away.
 
 ```sh
-hugo server -D
+hugo server
 
 ```
 

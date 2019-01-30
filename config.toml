@@ -162,7 +162,7 @@ theme = "hugo-elate-theme"
 
     [[params.services.item]]
       title = "Cloud Architecture, Design &amp; Migration"
-      description = "We can migrate existing applicaiton to the cloud as well as set you up for success in developing for the future. We have successfully design hundreds of clouds, developed hundreds of services, and migrating hundreds of legacy applications to the cloud."
+      description = "We can migrate existing applicaiton to the cloud as well as set you up for success in developing for the future. We have successfully designed hundreds of clouds, developed hundreds of services, and migrating hundreds of legacy applications to the cloud."
       icon = "icon-cloud"
     [[params.services.item]]
       title = "Devops"
@@ -178,7 +178,7 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "About"
-    description = "In functional mathematics a \"monad\" acts as a container that abstracts quirks in the computations, and lets you focus more on what you want to do with the contained values. We see ourselves as the \"monads\" of the cloud computing world. Being \"monadiq\" we help you with your adoption of or improvement of your cloud adoption. Experts in cloud architecture, cloud applications and devops we can bring you the experience you need."
+    description = "In functional mathematics a \"monad\" acts as a container that abstracts quirks in the computations, and lets you focus more on what you want to do with the contained values. We see ourselves as the \"monads\" of the cloud computing world. Being \"monadiq\" we help you with your cloud adoption or improvement of your existing cloud. Experts in cloud architecture, cloud applications and devops we can bring you the experience you need."
 
     # [[params.about.item]]
     #   name = "Jean Smith"
