@@ -1,9 +1,8 @@
 # Page settings
-baseurl = "localhost:1313"
+baseurl = "/"
 title = "monadiq"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
-publishDir = "docs"
 
 [params]
   
@@ -258,15 +257,15 @@ publishDir = "docs"
   # Contact section
   [params.contact]
     enable = true
-    map = true
+    map = false
     form = false
     title = "Get in touch"
     description = "Let us know if your interested in a quick chat about our offerings.<br/> It never hurts to talk!"
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "New York, New York"],
-        ["icon-phone", "Email Only"],
+        ["icon-home", "The Greater New York Metropolitan Area"],
+        # ["icon-phone", "Email Only"],
         ["icon-envelope", '<a href="mailto:contact@monadiq.com?Subject=Interesting%20Services" target="_top">contact@monadiq.com</a>'],
         ["icon-globe", '<a href="http://www.monadiq.com/" target="_blank">monadiq.com</a>']
       ]
