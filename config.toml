@@ -41,47 +41,47 @@ theme = "hugo-elate-theme"
   
   # Hero section
   [params.hero]
-    title = "Monadiq"
-    subtitle = 'Another free HTML5 bootstrap template by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates">FREEHTML5.co</a> released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons 3.0</a><br> ported for Hugo by <a href="http://saey55.gitlab.io/pietercv" target="_blank">Pieter Saey</a>'
+    title = "Cloud Consulting"
+    subtitle = 'Experts in cloud applications, cloud architectures, cloud computing, and devops. <br/>We can bring you the experience you need.'
  
   # Intro section
   # Available icons: http://simplelineicons.com/
   [params.intro]
 
   [[params.intro.item]]
-    title = "Plan"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
+    title = "Design &amp; Plan"
+    description = "Let us help you take your ideas, small or large, startup or enterprise, and make them actionable. We can guide you through the process from start to finish."
+    section = "contact"
     button = "Get In Touch"
     icon = "icon-bulb"
     img = "img_7.jpg"
 
   [[params.intro.item]]
     title = "Develop"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
+    description = "With years of experience in cloud computing, we know how difficult it can be to take action on ideas. Let us guide you and your team through it."
+    section = "services"
     button = "Click Me"
     icon = "icon-wrench"
     img = "img_8.jpg"
 
   [[params.intro.item]]
-    title = "Launch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
+    title = "Execute"
+    description = "Execution of ideas turned plans seperate us from the rest. It's one thing to design and develop. It's another thing to to execute and bring it to market. We can show you how!"
+    section = "about"
     button = "Why us?"
-    icon = "icon-rocket"
+    icon = "icon-bolt"
     img = "img_10.jpg"
 
-  [params.intro.video]
-    enable = true
-    title = "Watch the video"
-    icon = "icon-play2"
-    url = "https://vimeo.com/channels/staffpicks/93951774"
+  # [params.intro.video]
+  #   enable = true
+  #   title = "Watch the video"
+  #   icon = "icon-play2"
+  #   url = "https://vimeo.com/channels/staffpicks/93951774"
 
 
   # Work section
   [params.work]
-    enable = true
+    enable = false
     title = "Work"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     footertext = '** Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a>'
@@ -124,7 +124,7 @@ theme = "hugo-elate-theme"
 
   # Testimonials section
   [params.testimonials]
-    enable = true
+    enable = false
     title = "Testimonials"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
@@ -153,72 +153,72 @@ theme = "hugo-elate-theme"
   [params.services]
     enable = true
     title = "Services"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We provide many services in the cloud computing world. We are experts in cloud applications and cloud architectures. From design and implementation, migrations, company adoption, training, devops and the developer experience, we run the gamut. Below is a small sample of what we can provide. For more information contact us below."
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      title = "Cloud Applications"
+      description = "We can guid you through the process of cloud adoption, and help you succeed. We can show you why you should be adopting and obtaining cloud expertise. It's not just a buzz word."
+      icon = "icon-code"
 
     [[params.services.item]]
-      title = "Web &amp; Interface"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      title = "Cloud Architecture, Design &amp; Migration"
+      description = "We can migrate existing applicaiton to the cloud as well as set you up for success in developing for the future. We have successfully design hundreds of clouds, developed hundreds of services, and migrating hundreds of legacy applications to the cloud."
+      icon = "icon-cloud"
     [[params.services.item]]
-      title = "Photo &amp; Video"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      title = "Devops"
+      description = "Let your developers develop! We can give you the tools and practices you need to deliver quality at speed and at cost. Cloud is not just giving up your data center. It's adapting to and adopting cloud agility."
+      icon = "icon-loop"
 
       [[params.services.item]]
-      title = "CMS &amp; eCommerce"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
+      title = "Training"
+      description = "Let us train your existing staff for future success. We provide a hands on approach to design and implementaiton. We strongly believe that in order for you to truly succeed you'll need to be part of the process."      
       icon = "icon-monitor"
 
   # About section
   [params.about]
     enable = true
     title = "About"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "In functional mathematics a \"monad\" acts as a container that abstracts quirks in the computations, and lets you focus more on what you want to do with the contained values. We see ourselves as the \"monads\" of the cloud computing world. Being \"monadiq\" we help you with your adoption of or improvement of your cloud adoption. Experts in cloud architecture, cloud applications and devops we can bring you the experience you need."
 
-    [[params.about.item]]
-      name = "Jean Smith"
-      position = "Web Designer"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
-      img = "person1.jpg"
-      alt = "Person1"
-      social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-linkedin", "#"]
-      ]
+    # [[params.about.item]]
+    #   name = "Jean Smith"
+    #   position = "Web Designer"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+    #   img = "person1.jpg"
+    #   alt = "Person1"
+    #   social = [
+    #     ["icon-twitter", "#"],
+    #     ["icon-facebook", "#"],
+    #     ["icon-linkedin", "#"]
+    #   ]
 
-    [[params.about.item]]
-      name = "Rob Smith"
-      position = "Web Developer"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
-      img = "person2.jpg"
-      alt = "Person2"
-      social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-github", "#"]
-      ]
+    # [[params.about.item]]
+    #   name = "Rob Smith"
+    #   position = "Web Developer"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+    #   img = "person2.jpg"
+    #   alt = "Person2"
+    #   social = [
+    #     ["icon-twitter", "#"],
+    #     ["icon-facebook", "#"],
+    #     ["icon-github", "#"]
+    #   ]
 
-    [[params.about.item]]
-      name = "Larry Ben"
-      position = "Web Designer"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
-      img = "person3.jpg"
-      alt = "Person3"
-      social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-dribbble", "#"]
-      ]      
+    # [[params.about.item]]
+    #   name = "Larry Ben"
+    #   position = "Web Designer"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+    #   img = "person3.jpg"
+    #   alt = "Person3"
+    #   social = [
+    #     ["icon-twitter", "#"],
+    #     ["icon-facebook", "#"],
+    #     ["icon-dribbble", "#"]
+    #   ]      
 
   # Counters section
   [params.counters]
-    enable = true
+    enable = false
     title = "Stats"
     background = "full_image_1.jpg"
 
@@ -258,16 +258,16 @@ theme = "hugo-elate-theme"
   [params.contact]
     enable = true
     map = true
-    form = true
+    form = false
     title = "Get in touch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Let us know if your interested in a quick chat about our offerings.<br/> It never hurts to talk!"
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
-        ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "info@freehtml5.co"],
-        ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
+        ["icon-home", "New York, New York"],
+        ["icon-phone", "Email Only"],
+        ["icon-envelope", '<a href="mailto:contact@monadiq.com?Subject=Interesting%20Services" target="_top">contact@monadiq.com</a>'],
+        ["icon-globe", '<a href="http://www.monadiq.com/" target="_blank">monadiq.com</a>']
       ]
 
     name = "Name"
@@ -279,9 +279,9 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Elate Free HTML5. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
-    links = [
-        ["icon-twitter", "#twitter"],
-        ["icon-facebook", "#facebook"],
-        ["icon-youtube", "#youtube"]
-      ]
+    copyright = '<small>&copy; Monadiq LLC. All Rights Reserved.</small>'
+    # links = [
+    #     ["icon-twitter", "#twitter"],
+    #     ["icon-facebook", "#facebook"],
+    #     ["icon-youtube", "#youtube"]
+    #   ]
