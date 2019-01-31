@@ -10,7 +10,7 @@ monadiq.com is hosted on github pages with a custom domain.
 
 ## Development
 
-Simple start the hugo server and hack away.
+Simply start the hugo server and hack away.
 
 ```sh
 hugo server
@@ -18,10 +18,10 @@ hugo server
 ```
 
 ### Share your local changes with others publicly
-It's easy to automate, and here are the steps publicly
-Use [ngrok](https://dashboard.ngrok.com/get-started) to expose your local environment to others.
-Query ngrok tunnel and apply that url when starting the hugo dev server.
-This starts the hugo server with the ngrok tunnel url as the base url.
+
+* Use [ngrok](https://dashboard.ngrok.com/get-started) to expose your local environment to others.
+* Query ngrok tunnel and apply that url when starting the hugo dev server.
+* Start the hugo server with the ngrok tunnel url as the base url.
 
 ```sh
 # in first terminal
@@ -68,9 +68,7 @@ Press Ctrl+C to stop
 ### Theme 
 To adjust most of the setting modify the values in `config.toml`.
 
-Other specific page data is located in the `data` directory.
-
-To modify the theme directly i.e. css, termplates, layouts, js modify the `themes/airspace-hugo` directory
+To modify the theme directly i.e. css, templates, layouts, js modify the `themes/hugo-elate-theme` directory.
 
 ## Deployment
 
