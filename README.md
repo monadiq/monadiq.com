@@ -8,6 +8,13 @@ monadiq.com is hosted on github pages with a custom domain.
 * [ngrok](https://dashboard.ngrok.com/get-started)
 * [jq](https://stedolan.github.io/jq/download/)
 
+```sh
+brew install hugo
+
+
+```
+
+
 ## Development
 
 Simply start the hugo server and hack away.

@@ -2,7 +2,7 @@
 baseurl = "/"
 title = "monadiq"
 languageCode = "en-us"
-theme = "pmc-landing"
+theme = "hugo-elate-theme"
 
 [params]
   
@@ -12,8 +12,27 @@ theme = "pmc-landing"
 
   # Google Maps Javascript API Key (if not set will default to not passing a key)
   googleMapsApiKey = ""
+  [params.navigation]
+    brand = "Elate"
+    
+    contact = "Contact"
 
   # Hero section
   [params.hero]
     title = "monadiq"
-    subtitle = "launching soon!"
+    subtitle = "Software | Devops | Site Reliability | Product Development"
+
+  [params.contact]
+    enable = true
+    map = false
+    form = false
+    title = "Contact Us"
+    
+    # Available icons: http://simplelineicons.com/
+    details = [
+     
+        ["icon-envelope", "contact@monadiq.com"],
+      ]
+
+    email = "contact@monadiq.com"
+    
